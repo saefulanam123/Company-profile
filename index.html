@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #091057;
+        color: #ffffff;
+      }
+
+      .jumbotron {
+        background-color: #dbd3d3;
+        color: #000000;
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        border-radius: 0.3rem;
+      }
+
+      .cards {
+        margin-bottom: 2rem;
+      }
+
+      .card-body {
+        padding: 1rem;
+      }
+
+      .card-title {
+        font-weight: bold;
+        color: #000000;
+      }
+
+      .card-text {
+        font-size: 0.9rem;
+        color: #000000;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .btn-primary:hover {
+        background-color: #0069d9;
+      }
+
+      /* Awalnya semua konten disembunyikan */
+      section {
+        display: none;
+      }
+
+      /* Menampilkan section ketika di klik pada navigasi */
+      section:target {
+        display: block;
+        padding: 20px;
+      }
+
+      /* Menampilkan bagian Home secara default */
+      #home {
+        display: block;
+      }
+
+      /* Gaya agar navigasi terlihat jelas */
+      .navbar-nav .nav-link {
+        cursor: pointer;
+      }
+
+      /* Mengatur margin antar section */
+      section {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body id="home">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#home">SSS Custom Certificate</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#event">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#halaman-baru">Halaman Baru</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="jumbotron text-center">
+        <h1 class="display-4">Selamat Datang di SSS Custom Certificate</h1>
+        <p class="lead">
+          Aplikasi desain grafis berbasis web untuk membantu Anda membuat
+          sertifikat secara otomatis untuk kebutuhan akademis, webinar, dll.
+        </p>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="container">
+        <h2>Tentang Kami</h2>
+        <p>
+          SSS Custom Certificate adalah platform yang dirancang untuk membantu
+          Anda dalam membuat sertifikat secara otomatis untuk berbagai acara
+          seperti webinar, akademik, dan kejuaraan. Dengan antarmuka yang mudah
+          digunakan, Anda dapat mendesain sertifikat sesuai kebutuhan Anda.
+        </p>
+      </section>
+
+      <!-- Event Section -->
+      <section id="event" class="container">
+        <h2>Event</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Webinar</h5>
+                <p class="card-text">
+                  Mengapa tidak mengucapkan terima kasih kepada peserta webinar
+                  Anda dengan sertifikat webinar yang disesuaikan? Template
+                  sertifikat webinar gratis kami sangat cocok untuk acara daring
+                  apapun.
+                </p>
+                <a href="#" class="btn btn-primary">Buat Sertifikat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Akademis</h5>
+                <p class="card-text">
+                  Jadikan upacara penghargaan Anda lebih berkesan dan indah
+                  dengan kenang-kenangan yang menakjubkan untuk diserahkan
+                  kepada siswa. Buat desain layak bingkai dengan contoh
+                  sertifikat akademik gratis kami.
+                </p>
+                <a href="#" class="btn btn-primary">Buat Sertifikat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Kejuaraan</h5>
+                <p class="card-text">
+                  Berikan penghargaan yang terbaik - pilih dari koleksi desain
+                  contoh sertifikat kami dan background-nya, lalu sesuaikan
+                  untuk pencapaian apa saja.
+                </p>
+                <a href="#" class="btn btn-primary">Buat Sertifikat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container">
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami jika Anda memiliki pertanyaan:</p>
+        <ul>
+          <li>Email: support@sss-custom-certificate.com</li>
+          <li>Telepon: +62 812 3456 7890</li>
+          <li>Alamat: Jl. Mawar No. 12, Jakarta, Indonesia</li>
+        </ul>
+      </section>
+
+      <!-- Halaman Baru Section -->
+      <section id="halaman-baru" class="container">
+        <h2>Halaman Baru</h2>
+        <p>
+          Ini adalah halaman tambahan untuk menampilkan konten baru sesuai
+          kebutuhan. Anda dapat mengisi halaman ini dengan berbagai informasi
+          terkait sertifikat, layanan baru, atau fitur tambahan yang Anda
+          kembangkan di masa depan.
+        </p>
+      </section>
+    </main>
+
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        2024 Created Customize Certificate
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
